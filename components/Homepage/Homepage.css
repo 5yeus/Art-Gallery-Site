@@ -1,0 +1,112 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* Landingpage */
+.landing_page{
+    /* background-color: blue; */
+    display: grid;
+    grid-template-columns: repeat(3, 33%);
+    align-items: start;
+    grid-auto-rows: minmax(800px,auto);
+}
+
+.black-color{
+    background-color: #151515;
+    height: 800px;
+}
+
+.landing_page :nth-child(2){
+    height: 800px;
+}
+
+.hero-details{
+    display:flex;
+    flex-direction: column;
+    /* justify-content: flex-start; */
+    align-items: flex-start;
+    /* gap: 1rem; */
+    /* align-self: center; */
+    margin-top: 8rem;
+    margin-left: -3rem;
+    
+    
+}
+.hero-message {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    height: 300px;
+    gap: 3rem;
+    
+    
+}
+
+.hero-message > p{
+    font-family: "Outfit";
+    font-size: 22px;
+    line-height: 32px;
+    width: 350px;
+    font-weight: 300;
+}
+
+.hero-details > *{
+    padding: 4rem;
+    padding-left: 0;
+    
+}
+
+.button-tag{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    /* width: 260px; */
+    /* height: 72px; */
+}
+
+.hero-button{
+    width: 204px;
+    height: 72px;
+    background-color: #151515;
+    color: #fff;
+    border-style: none;
+}
+
+.button-tag :nth-child(2){
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 72px;
+    width: 58px;
+    background-color: #d5966c;
+}
+
+/* Collections Section  */
+.collections{
+    display: grid;
+    align-items: center;
+    gap: 2rem;
+    /* background-color: #2323AF; */
+    padding: 5rem;
+    /* grid-template-rows: repeat(3,1fr); */
+    grid-template-columns: repeat(2, 1fr);
+    
+}
+
+.collections-items > *{
+    grid-template-rows: 430px 750px;
+    background-color: #d5966c;
+}
+
+.collections :nth-child(2) {
+
+}
+.collections :nth-child(3) {
+    /* height: 720px; */
+}
