@@ -1,0 +1,13 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: 'Outfit-Light';
+  src: url('../src/assets/Font/Outfit-VariableFont_wght.ttf');
+  }
+
+@font-face{
+  font-family: 'Shoulder-Regular';
+  src: url('../src/assets/Font/BigShouldersDisplay-Regular.ttf')
+}
