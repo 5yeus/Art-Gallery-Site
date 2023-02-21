@@ -1,32 +1,34 @@
 /** @type {import('tailwindcss').Config} */
+const plugin = require('tailwindcss/plugin')
+
+
+
 module.exports = {
   content: [
     "./src/**/*.{js,jsx,ts,tsx}"
   ],
   theme: {
-    screens:{
-      sm: '374px',
-      md: '767px',
-      lg: '991px',
-      xl: '1200px',
+    screens: {
+      'mobile': {'min': '374px', 'max': '767px'},
+      'tablet': {'min': '768px', 'max': '1023px'},
+      'laptop': {'min': '1024px'}  
     },
-    // fontSize: {
-    //   sm: ['14px', '20px'],
-    //   base: ['16px', '24px'],
-    //   lg: ['20px', '24px'],
-    //   xl: ['24px', '28px'],
-    // },
     extend: {
+      fontFamily: {
+        'outfit': ['Outfit', 'sans-serif'],
+        'shoulder': ['Big Shoulders Display', 'cursive'],
+        'header': ['Big Shoulders Display-Black', 'cursive']
+      },
       colors:{
         goldBrown: '#D5966C',
         ash: '#444',
         pewterBlack: '#151515'
       },
-      font: {
-        'outfit': ['Outfit-Light','sans-serif'],
-        'shoulder': ['Shoulder-Regular' ,'cursive']
-      }
     },
   },
-  plugins: [],
+  plugins: [
+    plugin(function({addVariant,addUtilities}){
+      addVariant("children", "&>*")
+    })
+  ]
 }

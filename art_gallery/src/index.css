@@ -3,11 +3,42 @@
 @tailwind utilities;
 
 @font-face {
-  font-family: 'Outfit-Light';
+  font-family: 'Outfit';
   src: url('../src/assets/Font/Outfit-VariableFont_wght.ttf');
   }
 
 @font-face{
-  font-family: 'Shoulder-Regular';
+  font-family:'Big Shoulders Display';
   src: url('../src/assets/Font/BigShouldersDisplay-Regular.ttf')
 }
+
+@font-face{
+  font-family:'Big Shoulders Display-Black';
+  src: url('../src/assets/Font/BigShouldersDisplay-Black.ttf')
+}
+
+
+/* .progressBar{
+  margin: 0;
+  padding: 0 !important;
+  margin-top: -1px;
+  display: block;
+  background-color: #000000;
+  margin-left: 0 ! important;
+  margin-right: 0 ! important;
+  height: 1px;
+  z-index: 1;
+}*/
+/*
+.progressBg{
+  margin: 0;
+  padding: 0 !important;
+  padding-left: 0 ! important;
+  padding-right: 0 ! important;
+  width: 100%;
+  margin-top: 50px;
+  display: block;
+  background-color: #e5e5e5;
+  height: 1px;
+  z-index: -1;
+} */

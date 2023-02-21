@@ -10,7 +10,7 @@ const Homepage = () => {
     <div className='bg-white '>
         <Landingpage />
         <Collections />
-        <Footer />
+        <Footer bgColor={'bg-pewterBlack'} txColor={'text-white'}/>
     </div>
   )
 }
